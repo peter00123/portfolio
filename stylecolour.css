@@ -1,7 +1,7 @@
 body{
     
     font-family: 'Almendra SC', serif;
-    background-color: #FF6F00;
+    background-color: #f0ffb8;
 }
 html{
     scroll-behavior: smooth;
@@ -39,6 +39,7 @@ html{
 
 .profile {
     padding: 50px;
+    padding-top: 0px;
     position: relative;
     height: 100vh;
 }
@@ -47,18 +48,59 @@ html{
     text-align: left;
     position: relative;
     z-index: 0;
-    top: 130px;
+    top: 30px;
     left: 150px;
-    margin-bottom: 0;
-    background-image: url('assets/3.jpg'); /* Path to your image */
-    background-size: cover; /* Cover the entire text */
-    background-clip: text; /* Clip the background to the text */
-    -webkit-background-clip: text; /* For Safari */
-    color: transparent; /* Make the text color transparent */
+    color: #af9b95;
     text-align: center; /* Center the text */
     
 }
+@keyframes move-image {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    100% {
+      transform: translateY(-200px); /* Final position */
+    }
+  }
+  
+  .image. {
+    transform: translate(-50%, -50%);
+    animation:forwards;/* Default to no animation */
+    transition: transform 0.3s ease-in-out;
+  }
 
+.prof-bg1 {
+    position:absolute;
+    top: -70px;
+    left: 0;
+    height: 55%;
+    width: 40%;
+    z-index: 0;
+}
+.prof-bg2 {
+    position:absolute;
+    top: -70px;
+    right: 0;
+    height: 40%;
+    width: 40%;
+    z-index: 0;
+}
+.prof-bg3 {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 40%;
+    z-index: 0;
+}
+.prof-bg4 {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 40%;
+    z-index: 0;
+}
 
 
 
@@ -70,7 +112,7 @@ html{
         top: -800px;
         left: 1500px;
         margin-bottom: 0;
-        color: #202020;
+        color: #514e57;
     
 }
 .location{
@@ -88,10 +130,10 @@ html{
 
 .me {
     position: absolute;
-    top: 497px;
+    top: 370px;
     left: 250px;
     z-index: 1;
-    width: 750px;
+    width: 800px;
     height: 750px;
     margin-bottom: 0;
 }
