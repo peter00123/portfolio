@@ -1,0 +1,158 @@
+body{
+    
+    font-family: 'Almendra SC', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    position: sticky; /* Position it absolutely */
+    top: 750px; /* Align to the top */
+    left: 50px; /* Align to the left */
+    transform: rotate(-90deg); /* Rotate 90 degrees */
+    transform-origin: top left; /* Set the origin for rotation */
+    padding: 10px; /* Optional: padding */
+    z-index: 10; /* Ensure it is on top of other elements */
+}
+
+.navbar .black a{
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.navbar .black a :hover{
+    font-size: 50px;
+}
+
+.navbar .white a{
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.profile {
+    padding: 50px;
+    position: relative;
+    height: 100vh;
+}
+.be-d{
+    font-size: 280px;
+    text-align: left;
+    position: relative;
+    z-index: 0;
+    top: 130px;
+    left: 150px;
+    margin-bottom: 0;
+    color: #757575;
+}
+
+
+.name{
+        font-size: 110px;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+        top: -800px;
+        left: 1500px;
+        margin-bottom: 0;
+        color: #202020;
+    
+}
+.location{
+    
+    font-size: 50px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    top: -780px;
+    left: 1500px;
+    margin-bottom: 0;
+    color: #202020;
+
+}
+
+.me {
+    position: absolute;
+    top: 497px;
+    left: 250px;
+    z-index: 1;
+    width: 750px;
+    height: 750px;
+    margin-bottom: 0;
+}
+
+
+.about{
+    padding: 200px; 
+    padding-top: 250px;
+    height: 130vh;
+    background-color: black ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title{
+    font-size: 200px;
+    color: #757575;
+    
+}
+
+.paragrap{
+    font-size: 250px;
+}
+
+.paragraphbox span {
+    display: inline ;
+    color: hsl(0, 0%, 100% / 0.2); 
+    font-size: 50px;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, rgb(253, 253, 253),rgb(95, 94, 99));
+    animation: paragraphbox linear forwards;
+    animation-timeline: view();
+    animation-range: contain;
+}
+
+@keyframes paragraphbox {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+.works{
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+.stack{
+    padding: 200px; 
+    padding-top: 250px;
+    height: 100vh;
+    background-color: black ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+
+  .contact{
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+    padding: 10px;
+}
+
