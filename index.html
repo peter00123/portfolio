@@ -1,0 +1,217 @@
+<!--
+PROJECT: Retro-Pop Portfolio
+Files included in this single document for easy copy-paste:
+  - index.html
+  - pc.css    (for desktop/large screens)
+  - mobile.css (for mobile / small screens)
+
+Instructions: Create a folder, drop your images named 1.jpg,2.jpg,3.jpg,4.jpg,5.jpg next to index.html. Save the CSS into separate files (pc.css and mobile.css) and keep links as-is.
+-->
+
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pai Villamayor — Portfolio</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Desktop CSS (applies on wide screens) -->
+  <link rel="stylesheet" href="style.css" media="(min-width:901px)">
+  <!-- Mobile CSS (applies on small screens) -->
+  <link rel="stylesheet" href="mobile.css" media="(max-width:900px)">
+</head>
+<body>
+  <main class="site-root">
+
+    <!-- SECTION 1: Portfolio Cover -->
+    <section id="cover" class="section split cover">
+      <div class="art" aria-hidden="true">
+        <img src="assets/me.jpg" alt="Portfolio Cover Illustration">
+      </div>
+      <div class="text">
+        <h1 class="title">portfolio</h1>
+        <p class="subtitle">BASIL PETER MATHEW | DEVELOPER</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: About / Hello -->
+    <section id="about" class="section split reversed about">
+      <div class="text">
+        <h2 class="hello">Ciao!</h2>
+        <p class="intro"> "codding is an art where the limitaition is our dream & knowledge, The best part is we grow our knowledge as we  dream bigger"</p>
+        <div class="contact">
+          <a href="https://www.linkedin.com/in/basil-peter-mathew-042f56?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:basilpetermathew.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+      <div class="art">
+        <img src="assets/second.png" alt="About Illustration">
+      </div>
+    </section>
+
+    <!-- SECTION 3: Resume / Experience -->
+    <section id="resume" class="section split resume">
+      <div class="art ">
+        <a href="googl.com">
+            <img src="assets/resume.png" alt="Resume Illustration">
+        </a>
+      </div>
+      <div class="details">
+          <!--
+        <div class="block">
+          <h3>Experience</h3>
+          <div class="entry">
+            <div class="time">2023 — Present</div>
+            <div class="desc">Senior Graphic Artist — Freelance clients: branding and UI illustration.</div>
+          </div>
+          <div class="entry">
+            <div class="time">2021 — 2023</div>
+            <div class="desc">UI/Illustration Designer — Studio X (concept art & app illustration).</div>
+          </div>
+        </div> -->
+
+        <div class="block">
+          <h3>Education</h3>
+          <div class="entry">
+            <div class="time">2022 - 2026</div>
+            <div class="desc">BE Computer Science & Engineering</div>
+          </div>
+        </div>
+
+        <div class="block skills">
+          <h3>Skills</h3>
+          <ul class="skill-grid">
+            <li>OOPS C++</li>
+            <li>Data Structures & Algorithms</li>
+            <li>DBMS </li>
+            <li>Web Development </li>
+            <li>Version Control</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+        
+    <!-- SECTION 4: Project Showcase TA-GO -->
+    <section id="project" class="section project">
+      <div class="ribbons" aria-hidden="true"></div>
+      <div class="project-inner">
+        <div class="project-meta">
+          <div class="proj-number">00</div>
+          <h2 class="proj-title">PROJECTS</h2>
+        </div>
+        <div class="mockups" role="list">
+          <!--<div class="phone" role="listitem"><img src="4.jpg" alt="TA-GO mockup 1"></div>
+          <div class="phone" role="listitem"><img src="4.jpg" alt="TA-GO mockup 2"></div>
+          <div class="phone" role="listitem"><img src="4.jpg" alt="TA-GO mockup 3"></div>-->
+          <div class="showcase-projects">
+        <ul class="project-list">
+          <li class="project-item" data-title="Automatic git-hub activity creator" data-img="qr-code.png" data-features='["Creation oh git hub activity in a single click","Fully automated","best practice for creating a astetic Git hub profile"]' data-desc="for asthetic GitHub profile.">
+            <a href="https://github.com/peter00123/git-automation"> Auto Git-Hub activity</a>
+            <span class="desc">Creation of Git-hub activity with out any efforts.</span>
+          </li>
+          <li class="project-item" data-title="Automatic contact saver to Gmail" data-img="qr-code.png" data-features='["automaticaly add contact to Gmail from excernal data","utalise people&#39;s api ","data is added from excel file","87 contacs can be added in a single minute"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/automatic-contact-saver">Automatic contact saver</a>
+            <span class="desc">large number of contact can be save into gmail.</span>
+          </li>
+          <li class="project-item" data-title="Easy Live Share" data-img="qr-code.png" data-features='["Instant localhost sharing","No internet required","QR code connect","Real-time mobile preview"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/live-share">Easy Live Share </a>
+            <span class="desc">Preview your PC localhost websites on your phone instantly.</span>
+          </li>
+          <li class="project-item" data-title="Text encription and decryption" data-img="qr-code.png" data-features='["plain text encription ans decription","for communicating securely","we can decript it if we knew the sceret code"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/only-we-knows">MESSAGE ENCRYPTOR</a>
+            <span class="desc">Encript and decript text data for privacy.</span>
+          </li>
+          <li class="project-item" data-title="Plain image to Matrix abstract" data-img="qr-code.png" data-features='["creating a image filled with numeric and alphabetic charatecs insted of pixcel colour","first it is resized","then create a greyscale image","then convert it to matrix"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/image-to-matrix-data-map/tree/main/main%20copy">Abstract Matrix</a>
+            <span class="desc">Asthetic image generator.</span>
+          </li>
+        </ul>
+        <div id="project-popup" class="project-popup"></div>
+      </div>
+        </div>
+        <div class="project-details">
+          <h4>!</h4>
+          <ul>
+            <li>CODE</li>
+            <li>CODE</li>
+            <li>CODE</li>
+           
+          </ul>
+          <p class="proj-desc">"Code until dopomine is full"</p>
+
+    </div>
+        </div>
+      </div>-->
+<!--
+      <div class="rectangle-outer-project"></div>
+    <div class="rectangle-inner-project"></div>
+    <div class="projects-section" id="projects">
+      <h1><span class="highlight">MY</span> 
+        <span class="sub">favorate</span> 
+      <strong class="projects-text">PROJECTS</strong></h1>
+      <div class="showcase-projects">
+        <ul class="project-list">
+          <li class="project-item" data-title="Automatic git-hub activity creator" data-img="qr-code.png" data-features='["Creation oh git hub activity in a single click","Fully automated","best practice for creating a astetic Git hub profile"]' data-desc="for asthetic GitHub profile.">
+            <a href="https://github.com/peter00123/git-automation"> Auto Git-Hub activity</a>
+            <span class="desc">Creation of Git-hub activity with out any efforts.</span>
+          </li>
+          <li class="project-item" data-title="Automatic contact saver to Gmail" data-img="qr-code.png" data-features='["automaticaly add contact to Gmail from excernal data","utalise people&#39;s api ","data is added from excel file","87 contacs can be added in a single minute"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/automatic-contact-saver">Automatic contact saver</a>
+            <span class="desc">large number of contact can be save into gmail.</span>
+          </li>
+          <li class="project-item" data-title="Easy Live Share" data-img="qr-code.png" data-features='["Instant localhost sharing","No internet required","QR code connect","Real-time mobile preview"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/live-share">Easy Live Share </a>
+            <span class="desc">Preview your PC localhost websites on your phone instantly.</span>
+          </li>
+          <li class="project-item" data-title="Text encription and decryption" data-img="qr-code.png" data-features='["plain text encription ans decription","for communicating securely","we can decript it if we knew the sceret code"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/only-we-knows">MESSAGE ENCRYPTOR</a>
+            <span class="desc">Encript and decript text data for privacy.</span>
+          </li>
+          <li class="project-item" data-title="Plain image to Matrix abstract" data-img="qr-code.png" data-features='["creating a image filled with numeric and alphabetic charatecs insted of pixcel colour","first it is resized","then create a greyscale image","then convert it to matrix"]' data-desc="Preview your PC localhost websites on your phone instantly.">
+            <a href="https://github.com/peter00123/image-to-matrix-data-map/tree/main/main%20copy">Abstract Matrix</a>
+            <span class="desc">Asthetic image generator.</span>
+          </li>
+        </ul>
+        <div id="project-popup" class="project-popup"></div>
+      </div>
+    </div>-->
+    </section>
+
+    </section>
+
+    <!-- SECTION 5: Thank You / Footer -->
+    <section id="thanks" class="section split cover thanks">
+      <div class="art">
+        <img src="assets/tk.png" alt="Thank You Illustration">
+      </div>
+      <div class="text">
+        <h1 class="title"><span class="red">thank</span> <span class="dark">you!</span></h1>
+        <p class="subtitle">Let's work together!</p>
+        <div class="contact small">
+          <a href="#">Behance</a>
+          <a href="#">LinkedIn</a>
+          <a href="mailto:you@example.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Small inline script to smooth scroll to sections (optional) -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const href = a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        }
+      })
+    });
+  </script>
+</body>
+</html>

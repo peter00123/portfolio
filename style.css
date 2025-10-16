@@ -1,0 +1,206 @@
+
+/* Desktop / PC styles (save as pc.css) */
+:root{
+  --bg: #F6F3E5;
+  --accent: #C93433;
+  --yellow: #FFC82A;
+  --dark: #333;
+  --gap: 48px;
+  --max-width: 1200px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  background:var(--bg);
+  color:var(--dark);
+}
+.site-root{max-width:var(--max-width);margin:0 auto;padding:40px 24px}
+.section{padding:40px 0}
+.split{display:grid;grid-template-columns:60% 40%;gap:var(--gap);align-items:center}
+.split.reversed{grid-template-columns:40% 60%}
+.split .art{width:100%;height:70vh;display:flex;align-items:center;justify-content:center}
+.split .art img{width:100%;height:100%;object-fit:cover;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.split .text{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;padding-right:24px}
+.cover .text{align-items:flex-end}
+.title{font-family:'Alfa Slab One', 'Alfa Slab One', serif;color:var(--accent);font-weight:900;line-height:0.86;margin:0;text-align:right;font-size:8vw}
+.subtitle{font-size:1.25rem;margin-top:16px;opacity:0.95}
+.about .text{align-items:flex-start;padding-left:24px}
+.hello{font-family:'Alfa Slab One', serif;color:var(--accent);font-size:3.5rem;margin:0 0 12px 0;padding-bottom:6px;border-bottom:2px solid rgba(0,0,0,0.08)}
+.intro{max-width:38ch;font-size:1.05rem;line-height:1.6}
+.contact{display:flex;gap:16px;margin-top:18px}
+.contact a{font-size:0.95rem;text-decoration:none;color:var(--dark);font-weight:600}
+
+/* Resume details */
+.resume .details{padding:28px;border-radius:12px}
+.resume h3{font-family:'Alfa Slab One', serif;color:var(--accent);font-size:1.5rem;margin:0 0 12px 0}
+.resume .block{margin-bottom:22px}
+.entry{display:flex;gap:16px;margin-bottom:10px;align-items:flex-start}
+.entry .time{min-width:90px;font-weight:700;color:rgba(0,0,0,0.6)}
+.entry .desc{flex:1}
+.skills .skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+.skills li{position:relative;padding-left:18px}
+.skills li:before{content:'';position:absolute;left:0;top:6px;width:8px;height:8px;background:var(--accent);transform:rotate(45deg);border-radius:2px}
+
+/* Project section */
+.project{position:relative;overflow:visible;padding:80px 0}
+.project .ribbons{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(135deg, rgba(33,150,243,0.08) 0 33%, rgba(255,0,128,0.06) 33% 66%, rgba(255,200,42,0.04) 66% 100%);}
+.project-inner{position:relative;display:flex;flex-direction:column;align-items:center;gap:24px}
+.proj-number{position:absolute;right:24px;top:12px;font-family:'Alfa Slab One', serif;font-size:2.5rem;color:#000}
+.proj-title{font-size:6rem;margin:0;color:var(--yellow);-webkit-text-stroke:6px #fff;text-stroke:6px #fff}
+.mockups{display:flex;gap:20px;align-items:flex-end}
+.phone{width:160px;height:340px;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,0.12);overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center}
+.phone img{width:100%;height:100%;object-fit:cover}
+.project-details{max-width:420px;text-align:left}
+.project-details h4{color:var(--accent);font-family:'Alfa Slab One', serif;margin:0 0 8px 0}
+.project-details ul{list-style:none;padding:0;margin:0 0 8px 0;display:flex;gap:12px}
+.project-details li{position:relative;padding-left:18px}
+.project-details li:before{content:'';position:absolute;left:0;top:7px;width:8px;height:8px;background:var(--accent);transform:rotate(45deg)}
+.proj-desc{font-size:0.95rem;opacity:0.9}
+
+/* Thanks / Footer uses cover styles */
+.thanks .title{font-size:7vw}
+.thanks .title .red{color:var(--accent)}
+.thanks .title .dark{color:var(--dark)}
+.thanks .subtitle{margin-top:18px}
+
+/* utility */
+@media (min-width:1200px){
+  .site-root{padding:80px}
+}
+
+/* fine-tune for very large screens */
+@media (min-width:1600px){
+  .title{font-size:128px}
+  .proj-title{font-size:120px}
+}
+
+
+/* Project showcase styles */
+.showcase-projects {
+  margin: 48px auto;
+  max-width: 700px;
+  padding: 24px;
+  background: #181818;
+  border-radius: 16px;
+  color: #222;
+  position: relative;
+}
+
+.showcase-projects h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-family: 'Michroma', Arial, sans-serif;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-item {
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  background: #f6fff6;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+  font-weight: bold;
+  color: #222;
+}
+
+.project-item:hover {
+  background: #c2ffc2;
+}
+
+.project-item .desc {
+  display: block;
+  font-weight: normal;
+  font-size: 0.95em;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Pop-up styles */
+.project-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  min-width: 320px;
+  max-width: 90vw;
+  min-height: 180px;
+  max-height: 70vh;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  overflow: hidden;
+  padding: 0;
+  color: #222;
+  font-family: 'Michroma', Arial, sans-serif;
+  animation: fadeIn 0.18s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96);}
+  to { opacity: 1; transform: scale(1);}
+}
+
+.project-popup-content {
+  position: relative;
+  padding: 24px 28px 24px 180px;
+  min-height: 180px;
+}
+
+.project-popup-bg {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 160px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.5px) brightness(0.95);
+}
+
+.project-popup h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.3em;
+  color: #1a4d1a;
+}
+
+.project-popup ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.project-popup li {
+  margin-bottom: 6px;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .project-popup-content {
+    padding: 120px 10px 10px 10px;
+  }
+  .project-popup-bg {
+    width: 100%;
+    height: 100px;
+    top: 0; left: 0; right: 0;
+  }
+}
+
+
+.more{
+  align-self: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 100px;
+}
+.more:hover{
+  color: #1a4d1a;
+  cursor: pointer;
+}
+.seemore{
+  font-size: 100px;
+}
