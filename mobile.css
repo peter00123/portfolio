@@ -4,7 +4,7 @@
 *{box-sizing:border-box}
 body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;margin:0;background:var(--bg);color:var(--dark)}
 .site-root{padding:18px}
-.section{padding:18px 0}
+.section{padding:18px 0; min-height: 100vh;}
 
 /* Stack sections vertically */
 .split, .split.reversed{display:block}
