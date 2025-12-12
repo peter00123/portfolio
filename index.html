@@ -20,7 +20,13 @@ Instructions: Create a folder, drop your images named 1.jpg,2.jpg,3.jpg,4.jpg,5.
   <!-- Desktop CSS (applies on wide screens) -->
   <link rel="stylesheet" href="style.css" media="(min-width:901px)">
   <!-- Mobile CSS (applies on small screens) -->
-  <link rel="stylesheet" href="mobile.css" media="(max-width:900px)">
+  <link rel="stylesheet" href="mobilestyle.css" media="(max-width:900px)">
+  <script>
+  // If screen width is below 1024px → NOT desktop
+  if (window.innerWidth < 1024) {
+    window.location.href = "mobile.html";
+  }
+</script>
 </head>
 <body>
   <main class="site-root">
